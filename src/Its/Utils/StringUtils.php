@@ -48,4 +48,13 @@ class StringUtils {
 		$text = preg_replace('/-+/', '', $text);
 		return $text;
 	}
+	
+	public static function abbreviate($string) {
+		if (strlen($string) >= 20) {
+			return substr($string, 0, 10). " ... " . substr($string, -5);
+		}
+		else {
+			return $string;
+		}
+	}
 }
