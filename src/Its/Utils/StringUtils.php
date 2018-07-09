@@ -9,7 +9,7 @@
 namespace Its\Utils;
 
 
-class Sanitize {
+class StringUtils {
 	
 	public static function checkBool($string){
 	    $string = strtolower($string);
