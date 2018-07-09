@@ -10,6 +10,11 @@ namespace Its\Utils;
 
 
 class Sanitize {
+	
+	public static function checkBool($string){
+	    $string = strtolower($string);
+	    return (in_array($string, array("true", "false"), true));
+	}
 
 	static public function slugify($text)
 	{
