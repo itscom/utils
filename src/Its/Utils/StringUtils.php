@@ -44,7 +44,7 @@ class StringUtils {
 	}
 
 	public static function codify($text) {
-		$text = Sanitize::slugify($text);
+		$text = self::slugify($text);
 		$text = preg_replace('/-+/', '', $text);
 		return $text;
 	}
